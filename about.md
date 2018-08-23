@@ -4,12 +4,11 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+독학으로 jQuery부터 React Native까지 공부하고 있는 자바스크립트 개발자입니다.
 
-### More Information
+제가 알게 된 것들을 혼자 알기엔 아까워서 만든 블로그입니다.
 
-A place to include any other types of information that you'd like to include about yourself.
 
-### Contact me
+### GitHub
 
-[email@domain.com](mailto:email@domain.com)
+[http://github.com/futurehandsup](http://github.com/futurehandsup)
