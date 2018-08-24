@@ -19,7 +19,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.7 $helvetica;
   color: $darkGray;
 }
 
@@ -28,6 +28,10 @@ body {
   max-width: 740px;
   padding: 0 10px;
   width: 100%;
+
+  @include mobile{
+    padding: 0 30px;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -68,7 +72,6 @@ p {
   margin: 15px 0;
   line-height: 1.65;
   font-weight: 200;
-
 }
 
 a {
@@ -179,7 +182,7 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 35px;
   }
 }
 
@@ -255,6 +258,12 @@ nav {
 }
 
 .post {
+  p {
+    text-align: justify;
+    @include mobile{
+      line-height: 1.8;
+    }
+  }
   blockquote {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
