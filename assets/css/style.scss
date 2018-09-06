@@ -21,8 +21,14 @@ body {
 	background: $white;
   font: 18px/1.7 $helvetica;
   color: $darkGray;
-}
+  min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+}
+#main {
+  flex: 1;
+}
 .container {
   margin: 0 auto;
   max-width: 740px;
@@ -112,10 +118,26 @@ strong, b {
   font-weight: bold;
 }
 
+small{
+  font-size: smaller;
+}
+
 img {
   max-width: 100%;
 }
 
+.gray{
+  color: $gray !important;
+}
+.lightGray{
+  color: $lightGray  !important;
+}
+.darkGray{
+  color: $darkGray !important;
+}
+.red{
+  color: $blue !important;
+}
 // Fixes images in popup boxes from Google Translate
 .gmnoprint img {
   max-width: none;
@@ -157,7 +179,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .masthead {
@@ -250,12 +272,20 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+
+  h1 {
+    margin-bottom: 0;
+  }
+  .entry{
+    color: $gray;
+  }
 }
 
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
+
 
 .post {
   p {
@@ -283,11 +313,32 @@ nav {
   }
 }
 
+.writer{
+  padding: 20px 0;
+  margin: 30px 0;
+  border-top: solid 1px $lighterGray;
+  overflow: hidden;
+
+  .writer-info-wrap{
+    float: left;
+  }
+  .writer-name{
+    margin: 0;
+    font-size: 24px;
+    font-weight: 100;
+  }
+  .date{
+    color: $lighterGray;
+    font-size: smaller;
+  }
+
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  background-color: rgba($lighterGray, .5);
 }
 
 footer {

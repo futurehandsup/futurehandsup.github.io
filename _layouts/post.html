@@ -9,8 +9,14 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <div class="writer">
+    <div class="site-avatar "><img src="{{ site.avatar }}" /></div>
+    <div class="writer-info-wrap">
+      <div class="writer-name">{{ site.name }}</div>
+      <div class="date">
+        Written on {{ page.date | date: "%B %e, %Y" }}
+      </div>
+    </div>
   </div>
 
   {% include disqus.html %}

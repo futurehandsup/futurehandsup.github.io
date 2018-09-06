@@ -11,8 +11,7 @@ layout: default
       <div class="entry">
         {{ post.description }}
       </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      <small class="date lightGray">Written on {{ post.date | date: "%F" }}</small>
     </article>
   {% endfor %}
 </div>

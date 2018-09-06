@@ -1,6 +1,6 @@
 
 pre.highlight {
-  background-color: #efefef;
+  background-color: lighten($lighterGray, 16%);
   padding: 15px 15px 15px 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -10,7 +10,7 @@ pre.highlight {
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-  background-color: #efefef;
+  background-color: lighten($lighterGray,  16%);
   padding: 1px 3px;
   border-radius: 3px;
 }
